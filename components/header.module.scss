@@ -1,0 +1,25 @@
+.mainHeader {
+   padding: 2rem 0;
+   .logo{
+    width: 200px;
+   }
+   .suppLog{
+      li{
+         &:not(:last-child){
+            margin-right: 2rem;
+         }
+         a{
+            display: block;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            img{
+               margin-right: 10px;
+            }
+            &:hover{
+               color: #034265;
+            }
+         }
+      }
+   }
+}

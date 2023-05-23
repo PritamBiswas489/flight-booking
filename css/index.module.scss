@@ -1,0 +1,383 @@
+.homeBanner {
+    width: 100%;
+    height: 400px;
+    background-size: cover !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(3, 66, 101, 0.34);
+    }
+}
+
+.bookFlight {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(125, 127, 128, 0.2) 0 10px 15px -10px;
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+.radio{
+    margin-bottom: 1.2rem;
+    ul{
+        li{
+            &:not(:last-child){
+                margin-right: .8rem;
+            }
+        }
+    }
+}
+
+.inputArea {
+    border: rgba(196, 208, 216, 0.5) 1px solid;
+    border-radius: 6px;
+    padding: 10px 10px;
+    
+    label {
+        font-size: 14px;
+    }
+    .formInput {
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: #034265;
+        width: 100%;
+        background-color: transparent;
+        height: 26px;
+    }
+    select{
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: #034265;
+        width: 100%;
+        background-color: transparent;
+        height: 26px;
+    }
+    .react-date-picker__wrapper{
+        border: none !important;
+        background: #f00;
+        padding: 3px
+    }
+}
+
+.bannSearch {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    .input-1 {
+        width: 100%;
+        border: rgba(196, 208, 216, 0.5) 1px solid;
+        padding: 0 15px 0 40px;
+        height: 42px;
+        outline-width: 0;
+        color: #034265;
+        font-weight: 500;
+        background: #fff;
+    }
+    .srcButton {
+        position: absolute;
+        left: 0;
+        background-color: transparent;
+        border: none;
+        outline-width: 0;
+        height: 38px;
+        width: 38px;
+    }
+}
+
+.findFlight {
+    padding: 0 60px;
+    background: #32D5F9;
+    color: #034265;
+    line-height: 55px;
+    width: 340px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    &:hover{
+        background: #034265;
+    color: #32D5F9;
+    }
+}
+
+.citiesDestinationBox {
+    a{
+        display: block;
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.2);
+            transition: all ease-in-out .4s;
+        }
+        .destinationName {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            left: 0;
+            z-index: 1;
+            transition: all ease-in-out .4s;
+            h5{
+                color: #fff;
+                font-weight: 700;
+            }
+            h6{
+                color: #fff;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &:hover{
+        a{
+            &::after{
+                background: rgba(0, 0, 0, 0.534);
+            }
+            .destinationName {
+                bottom: 25px;
+            }
+        }
+    }
+}
+
+.bgWhite {
+    background: #fff;
+}
+
+.destinationsSection {
+    padding: 4rem 0;
+}
+
+.sectionTitle {
+    h2{
+        text-transform: uppercase;
+    }
+}
+.travelersChoose {
+    background: #f3fbff;
+    padding: 3rem 0;
+    h2{
+        margin-bottom: 1.5rem;
+    }
+}
+.travelersChooseBox {
+    max-width: 220px;
+    margin: 0.625rem 0;
+    span{
+        display: inline-block;
+        width: 58px;
+        height: 58px;
+        background: #32d5f9;
+        border-radius: 5px;
+        line-height: 58px;
+        text-align: center;
+        margin-bottom: 0.625rem;
+        img{
+            width: auto;
+            height: 38px;
+        }
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    p{
+        color: #868C8E;
+        font-size: 13px;
+    }
+}
+.PopularFlights {
+    padding: 3rem 0;
+    background: #fff;
+}
+.PopularFlightsBox {
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px -5px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    .pfbLeft {
+        flex: 146px;
+        max-width: 146px;
+        span{
+            display: block;
+            img{
+                width: 100% !important;
+                display: block;
+            }
+        }
+    }
+    .pfbRight {
+        flex:1 0 0%;
+        padding: 0 1rem;
+        h5{
+            font-size: 1.125rem;
+            span{
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        p{
+            font-size: 0.75;
+            font-weight: 500;
+            color: #034265;
+            margin: 0;
+            letter-spacing: 0;
+        }
+    }
+}
+
+.mapSection {
+    background: #F2F4F5;
+    padding: 3rem 0;
+    .mapSectionWrap {
+        background: #fff;
+        padding: 30px;
+        border-radius: 20px;
+    }
+    .mapTop{
+        margin-bottom: 1rem;
+        .mapTopLeft {
+            ul{
+                li{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #034265;
+                    &:not(:last-child){
+                        margin-right: 2rem;
+                    }
+                    span{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        img{
+                            display: block;
+                            vertical-align: middle;
+                            position: relative;
+                            top: -2px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mapTopRight {
+            font-size: 15px;
+            color: #034265;
+            font-weight: 600;
+            a{
+                color: #32D5F9;
+                &:hover{
+                    color: #034265;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .mapMid {
+        .mapMidInput {
+            border: #C4D0D8 1px solid;
+            padding: .4rem .8rem;
+            border-radius: 6px;
+            .input-2 {
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                padding: 2px 0;
+                font-weight: 700;
+                color: #034265;
+            }
+        }
+        .srcBtn {
+            background: #32d5f9;
+            height: 66px;
+            width: 76px;
+            text-align: center;
+            border: none;
+            border-radius: 6px;
+            img{
+                display: inline-block;
+                line-height: 60px;
+            }
+        }
+    }
+}
+
+.mapImg {
+    margin-top: 1rem;
+    img {
+        display: block;
+        border-radius: 20px;
+    }
+}
+
+.newsLatter {
+    padding: 3rem 0;
+    background: url(../public/images/flight-pattern.png) center center no-repeat #32d5f9;
+    background-size: cover;
+    .newsLatterDesk {
+        margin: 10px 0;
+        h5{
+            margin: 0;
+            font-size: 18px;
+        }
+        p{
+            color: #034265;
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+    .input-3 {
+        width: 100%;
+        background: #fff;
+        border: #2796D4 1px dashed;
+        height: 40px;
+        border-radius: 6px;
+        padding: 0 20px;
+        color: #034265;
+
+    }
+    .sendDeal {
+        height: 40px;
+        background: #034265;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 0 2.5rem;
+        display: block;
+        border-radius: 6px;
+        border: none;
+        text-transform: capitalize;
+        width: 100%;
+        margin: 10px 0;
+    }
+    img{
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+
+
